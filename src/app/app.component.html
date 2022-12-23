@@ -1,2 +1,8 @@
+<p>Практическое задание2: </p>
 <p>{{outputText}}</p>
-<app-counter-component text="hello"></app-counter-component>
+<app-counter-component (currentCounter)="changeCurrentNumber($event)"></app-counter-component>
+
+<p>Практическое задание3: </p>
+<div *ngFor="let obj of arrObjects">{{obj.objectName}}</div>
+<p>дата: {{currentDate | date: 'dd.MM.yyyy'}}</p>
+<p>Create Pipe: {{currentNumber | add_fave_pipe}}</p>

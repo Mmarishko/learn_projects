@@ -11,7 +11,21 @@ import {
 export class AppComponent implements OnInit {
     outputText = 'Hello';
 
+    arrObjects = [
+        { objectName: 'FirstName' },
+        { objectName: 'SecondName' },
+        { objectName: 'ThirdName' }
+    ];
+
+    currentDate = new Date();
+
+    currentNumber = 0;
+
     ngOnInit(){
 
+    }
+
+    changeCurrentNumber(number: any) {
+        this.currentNumber = number;
     }
 }
