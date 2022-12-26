@@ -1,8 +1,11 @@
-<p>Практическое задание2: </p>
+<h4>Практическое задание2: </h4>
 <p>{{outputText}}</p>
 <app-counter-component (currentCounter)="changeCurrentNumber($event)"></app-counter-component>
 
-<p>Практическое задание3: </p>
+<h4>Практическое задание3: </h4>
 <div *ngFor="let obj of arrObjects">{{obj.objectName}}</div>
 <p>дата: {{currentDate | date: 'dd.MM.yyyy'}}</p>
 <p>Create Pipe: {{currentNumber | add_fave_pipe}}</p>
+
+<h4>Практическое задание4: Маршрутизация в приложении</h4>
+<router-outlet></router-outlet>

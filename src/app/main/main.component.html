@@ -1,0 +1,9 @@
+<p>Главная</p>
+<p>Навигация: </p>
+<div>
+    <span title="О компании" (click)="linkToSrc('about')" class="menu-item">О компании</span>
+    <span title="Контакты" (click)="linkToSrc('contact')" class="menu-item">Контакты</span>
+    <span *ngFor="let item of items" title="{{item.name}}" class="menu-item" (click)="linkToSrc('item/' + item.id)">{{item.name}}</span>
+</div>
+
+
